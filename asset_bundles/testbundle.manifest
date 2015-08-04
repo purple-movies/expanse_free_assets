@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 831710096
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 55131c479876ee2471f5c77b62cfe4df
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8cd21fb751c7bdd998bfc3a3acdf42d7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b66f666edecff274bbb97fd406163a76, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+Assets:
+- Assets/Capsule.prefab
+- Assets/manifest.txt
+- Assets/Sphere.prefab
+Dependencies: []
