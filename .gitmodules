@@ -1,0 +1,7 @@
+
+[submodule "expanse_bundle_lib"]
+	path = expanse_free_assets/Assets/expanse_bundle_lib
+	url = https://github.com/purple-movies/expanse_bundle_lib.git
+[submodule "Assets/expanse_bundle_lib"]
+	path = Assets/expanse_bundle_lib
+	url = https://github.com/purple-movies/expanse_bundle_lib.git
