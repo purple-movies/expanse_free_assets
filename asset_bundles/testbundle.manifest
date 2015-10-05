@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3368040783
+CRC: 1598765731
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5fdf407c761422d653266e2f002ddd55
+    Hash: 3bc37e3b42d714a44717be5cd967245e
   TypeTreeHash:
     serializedVersion: 2
     Hash: d6d247831d4105b1e8694665ff448b94
@@ -36,7 +36,7 @@ ClassTypes:
 - Class: 136
   Script: {instanceID: 0}
 Assets:
-- Assets/Capsule.prefab
-- Assets/manifest.txt
-- Assets/Sphere.prefab
+- Assets/testbundle/Capsule.prefab
+- Assets/testbundle/manifest.txt
+- Assets/testbundle/Sphere.prefab
 Dependencies: []

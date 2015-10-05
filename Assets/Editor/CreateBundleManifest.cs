@@ -12,16 +12,18 @@ public class CreateBundleManifest
 	[MenuItem ("Assets/Create Bundle Manifest")]
 	public static void createBundleManifest()
 	{
-		var manifest = new AssetsManifest();
-
+		var manifest1 = new AssetsManifest();
 		var asset = new ExpanseAsset("Capsule");
-		manifest.addPlacibleAsset( asset );
+		manifest1.addPlacibleAsset( asset );
 		asset = new ExpanseAsset("Sphere");
-		manifest.addPlacibleAsset( asset );
+		manifest1.addPlacibleAsset( asset );
+		var jsonString =  serialize(typeof(AssetsManifest), manifest1);
+		Debug.Log(jsonString);
 
-		var jsonString =  serialize(typeof(AssetsManifest), manifest);
-		
-//		Debug.Log(manifest);
+		var manifest2 = new AssetsManifest();
+		asset = new ExpanseAsset("Cylinder");
+		manifest2.addPlacibleAsset(asset);
+		jsonString = serialize(typeof(AssetsManifest), manifest2);
 		Debug.Log(jsonString);
 
 		Debug.Log("stuff :: " + Application.dataPath);
