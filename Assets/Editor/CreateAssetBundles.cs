@@ -5,6 +5,7 @@ public class CreateAssetBundles
 	[MenuItem ("Assets/Build AssetBundles")]
 	static void BuildAllAssetBundles ()
 	{
-		BuildPipeline.BuildAssetBundles ("asset_bundles");
+        var options = new BuildAssetBundleOptions();
+		BuildPipeline.BuildAssetBundles("asset_bundles", options, BuildTarget.StandaloneWindows64);
 	}
 }
