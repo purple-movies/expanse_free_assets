@@ -6,6 +6,7 @@ public class CreateAssetBundles
 	static void BuildAllAssetBundles ()
 	{
         var options = new BuildAssetBundleOptions();
-		BuildPipeline.BuildAssetBundles("asset_bundles", options, BuildTarget.StandaloneWindows64);
+		BuildPipeline.BuildAssetBundles("asset_bundles", options, 
+            BuildTarget.StandaloneWindows64);
 	}
 }

@@ -1,6 +1,5 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using System.Collections;
 using System.IO;
 using System;
 using FullSerializer;
@@ -18,20 +17,15 @@ public class CreateBundleManifest
 		asset = new ExpanseAsset("Sphere");
 		manifest1.addPlacibleAsset( asset );
 		var jsonString =  serialize(typeof(AssetsManifest), manifest1);
-		Debug.Log(jsonString);
+        File.WriteAllText(Application.dataPath + @"/testbundle/manifest.txt", jsonString);
 
-		var manifest2 = new AssetsManifest();
+        var manifest2 = new AssetsManifest();
 		asset = new ExpanseAsset("Cylinder");
 		manifest2.addPlacibleAsset(asset);
 		jsonString = serialize(typeof(AssetsManifest), manifest2);
-		Debug.Log(jsonString);
+		File.WriteAllText(Application.dataPath + @"/testbundle2/manifest.txt", jsonString);
 
-		Debug.Log("stuff :: " + Application.dataPath);
-
-
-		File.WriteAllText(Application.dataPath + @"/assets_to_bundle", jsonString);
-//		File.WriteAllText(@"C:\", jsonString);
-//		
+        AssetDatabase.Refresh();
 	}
 	
 	static string serialize(Type type, object value)
