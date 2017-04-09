@@ -18,8 +18,11 @@ public class CreateBundleManifest
 
         asset = new ExpanseAsset("Cube");
         manifest1.addPlacibleAsset(asset);
-
+        
         asset = new ExpanseAsset("Sphere");
+        manifest1.addPlacibleAsset(asset);
+
+        asset = new ExpanseAsset("PSphere");
         manifest1.addPlacibleAsset(asset);
 
         var jsonString =  serialize(typeof(AssetsManifest), manifest1);
